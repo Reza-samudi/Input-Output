@@ -1,0 +1,14 @@
+<table class="table table-sm table-secondary table-bordered" >
+  <thead>
+    <tr>
+    <th>#</th>
+    <th  *ngFor="let item of headers">{{item}}</th>
+    <th></th>
+    </tr>
+  </thead> 
+  <tbody>   
+    <tr  *ngFor= "let ditem of data">
+      <td  *ngFor="let fitem of fields">{{ditem[fitem]}}</td>
+    </tr>
+  </tbody>
+</table>
